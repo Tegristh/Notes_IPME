@@ -1,0 +1,37 @@
+    Application de gestion de cocktail (Le Marmitail - Marmiton du Cocktail)
+
+    Plateforme colltective de dépôt de recette de cocktail.
+
+    Un user peut créer une recette, la modifier et la supprimer
+    Un user peut consulter les cocktails disponible
+    Un user peut rechercher un coktail par nom, ingrédient ou tag
+    Les users peuvent ajouter des tags à la volée sur leur recettes
+    Les users peuvent déposer des commentaires sur les recettes
+    Les users peuvent noter le cocktail
+    L'admin peut ajouter des ingrédients à l'application
+    Un ingrédient est alcoolisé ou non, on précisera son degré aussi (s'il ne l'est pas, il est à 0)
+    Un cocktail est jugé alcoolisé, si au moins l'un de ses ingrédients est alcoolisé
+    Les users peuvent "liker" / ajouter en favori les recettes des autres utilisateurs
+    Un user peut consulter sa liste de cocktail déposée
+    Un user peut consulter sa liste de favoris
+    L'admin peut bien sûr faire les mêmes actions que le user...
+    Le user peut se connecter
+    Un user non connecté peut simplement consulter les recettes de l'application et effectuer des recherches
+    
+
+    Les entités :
+        - Ingredient
+        - Recipe
+        - User
+        - Tag
+        - Review
+    
+    Relations :
+        - Recipe -> Ingredient
+        - User -> Recipe (recipe owner)
+        - Review -> Recipe
+        - User -> Recipe (like)
+        - Recipe -> Tag
+        - Review -> User
+
+    (PS : ajoutez moi bien les attributrs adéquats au processus... au moins pour le diagramme de classe)
