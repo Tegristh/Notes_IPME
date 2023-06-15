@@ -1,0 +1,57 @@
+Ajoutez l'utilisateur thor (il doit avoir un mot de passe et une dossier "home")
+    sudo adduser Thor
+
+Ajoutez les utilisateurs ironman, c_america, hulk et black_widow sans leur attribuer de mot de passe ou de home
+    sudo useradd ironman c_america hulk black_widow
+
+Quel fichier me permet de voir les utilisateurs sur la machine ?
+    /etc/passwd
+
+Changez le mot de passe de ironman
+    sudo usermod ironman --password Jarvis12
+
+Changez la shell d'ironman en "bash"
+    sudo usermod ironman --shell /bin/bash
+
+Renommez black_widow en "natasha"
+    sudo usermod black_widow --login natasha
+
+Ajoutez un user "thanos" en utilisant la commande "useradd"... mais il doit avoir une "home" !
+    sudo useradd -m thanos
+
+Donnez lui un mot de passe
+    sudo passwd thanos 8balance8
+
+Donnez lui accès à la commande /sbin/userdel
+    thanos ALL = /sbin/userdel
+
+"Incarnez" thanos
+    su -thanos
+
+en tant que thanos, supprimez les utilisateurs hulk et c_america
+    sudo userdel hulk c_america
+
+Quittez la session de thanos
+    exit
+
+creez un groupe "infinitygauntlet"
+    sudo groupadd infinitygauntlet
+    
+donnez aux membres de ce groupe tous les droits
+    sudo visudo
+    %infinitygauntlet   ALL=(ALL:ALL) ALL
+
+ajoutez ironman au groupe infinitygauntlet
+    sudo usermod -aG infinitygauntlet ironman
+
+ajoutez thanos au groupe infinitygauntlet
+    sudo usermod -aG infinitygauntlet thanos
+
+supprime thanos du groupe infinitygauntlet
+    sudo gpasswd -d thanos infinitygauntlet
+
+incarnez ironman, et "ressucitez" hulk et natasha
+    su -ironman
+    
+toujours en tant que ironman, mettez fin au reigne de thanos !
+enfin, supprimez le groupe "infinitygauntlet"
