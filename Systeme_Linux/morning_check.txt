@@ -1,0 +1,48 @@
+1 - Comment puis-je me déplacer dans un dossier ?
+cd
+
+2 - Quelle commande me permet de voir le contenu d'un dossier ?
+ls
+
+3 - Avec la commande de la question précédente, à quoi servent "-alh" ?
+a: all, l: long, h: human redable
+
+4 - Pourquoi parfois je dois commencer ma commande par le mot "sudo" ?
+Pour utiliser les fonctions réservées aux SuperUser, l'admin (root) du système, stoquées dans "/sbin"
+
+5 - Comment créer le fichier "nouveau.txt" ?
+touch nouveau.txt
+
+6 - Comment puis-je écrire dans ce fichier ?
+nano nouveau.txt puis utiliser l'éditeur.
+echo "contenu" > nouveau.txt
+
+7 - Comment puis-je voir le contenu de ce fichier ?
+cat nouveau.txt
+batcat nouveau.txt
+
+8 - Comment puis-je voir uniquement les 10 premières lignes ? Les 10 dernières ?
+head nouveau.txt
+
+9 - Je veux déplacer fichier1, fichier2 et fichier3 dans "monDossier". Comment faire ?
+mv fichier1 fichier2 fichier3 monDossier
+
+10 - Je veux supprimer tous les fichiers mp3. Comment faire ça facilement ?
+rm *.mp3
+
+11 - Comment créer un dossier "monDossier" ?
+mkdir monDossier
+
+12 - Comment le suprimer ?
+rm -r monDossier
+
+13 - Comment renommer "ficher1" en "fichier1" ?
+mv ficher1 fichier1
+
+14 - Je suis dans "/home/moi/Documents", comment copier "fichier.pdf" dans mon dossier personnel ?
+cp fichier.pdf ../
+
+15- Quelles commandes le formateur a complètement oublié de faire pour mettre à jour le système ?
+sudo apt get update
+sudo apt get upgrade
+
