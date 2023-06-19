@@ -3,6 +3,8 @@
 
 [Ma méthode habituelle d'installation](https://www.theodinproject.com/lessons/foundations-setting-up-git)
 
+[apprentissage interactif](https://learngitbranching.js.org/?locale=fr_FR)
+
 ## De quoi on parle?
 
 - Git est le logiciel de versioning installé sur l'ordinateur.
