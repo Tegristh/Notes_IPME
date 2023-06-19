@@ -128,3 +128,4 @@ $ git clone <lien du repo dispo sur github>
 ```bash
 git branch -f main HEAD~3
 git cherry-pick
+```
