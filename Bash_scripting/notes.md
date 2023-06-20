@@ -97,3 +97,32 @@ valeurs de conditions:
 - -lt : Lesser than (<)
 - -le : Lesser or Equal (<=)
 
+- && : AND
+- || : OR
+
+- -z : element vide
+- -f : fichier
+- -d : dossier
+- -x : est executable
+- ==  : (équal )dans une char ==
+
+
+```bash
+coucou=""
+
+file=/home/...../calculette.sh
+directory=home/..../scripts
+
+if [[ -f $file]]; then
+    echo "le fichier $file existe!"
+else
+echo "ca n'existe pas"
+fi 
+if [[ -d $directory]]; then
+    echo "le dossier $directory existe!"
+else
+    echo "ca n'existe pas"
+fi
+
+```
+
