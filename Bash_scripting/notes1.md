@@ -1,6 +1,6 @@
 >20-06-23 - Maxime Montagne - Drosalys
 
-# Script Bash
+# Bash Script 1
 
 Un script bash commence par un shebang pour indiquer à la machine quel interpréteur utiliser.
 ```bash
@@ -108,8 +108,6 @@ valeurs de conditions:
 
 
 ```bash
-coucou=""
-
 file=/home/...../calculette.sh
 directory=home/..../scripts
 
@@ -125,4 +123,6 @@ else
 fi
 
 ```
+***
 
+## 
