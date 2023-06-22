@@ -99,3 +99,17 @@ esac
 
 ```
 
+## Cron
+
+```bash
+# testcron.sh
+#!/bin/bash
+echo "coucou $(date)" >> /home/user/coucou.txt
+
+# in shell
+$ crontab -e
+
+# add :
+10 * * * * /user/scripts/testcron.sh
+
+```
