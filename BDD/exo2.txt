@@ -1,0 +1,37 @@
+EXO  2 
+Petite structure type le bon coin
+
+Table user
+- first_name VARCHAR(255),
+- last_name VARCHAR(255),
+- email VARCHAR(255),
+- phone VARCHAR(15),
+- date_of_birth DATE
+- created_at DATETIME
+
+
+Table listing
+- created_at DATETIME,
+- title VARCHAR(255),
+- price DECIMAL (renseignez vous sur le type decimal)
+- description TEXT
+- hand_drop BOOLEAN (renseignez vous sur le type boolean)
+- is_sell BOOLEAN
+
+Table tchat
+- created_at DATETIME
+- content TEXT
+
+Table category
+- label VARCHAR
+
+- Un user peux avoir plusieurs listings
+- Un listing peux avoir qu'un seul user
+
+- Un listing peux avoir une seul category
+- Une category peux avoir plusieurs listing
+
+
+Partie la plus difficile, à vous de réfléchir comment relié un tchat à 2 user. (vous pouvez appeler le nom des propriétées comme vous voulez)
+- Un tchat doit etre relié à 2 user (celui qui écrit et celui qui recoit) et aussi relié à un listing.
+- Un listing peux avoir plusieurs tchat

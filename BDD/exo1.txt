@@ -1,0 +1,18 @@
+1 - Créer un schéma de base de donnée qui représente une animalerie.
+
+- Il faut avoir en base de donnée :
+	- une table proprietaire : nom, prenom, date de naissance, email
+	- une table animal: nom, age
+	- une table race: nom
+	- une table couleur: label
+
+A vous ensuite de faire les relations avec les consignes suivantes :
+
+Un Propriétaire peux avoir plusieurs animaux.
+Un Animal peux avoir qu'une seule race.
+Une couleur peux avoir plusieurs animaux et un animal peux avoir plusieurs couleurs.
+
+Appeler le formateur pour vérifier le schéma.
+
+
+2 - Créer toutes les tables et relation nécéssaire.

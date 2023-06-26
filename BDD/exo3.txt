@@ -1,0 +1,5 @@
+- sur la base de l'animalerie
+- insérer des propriétaires (5/6)
+- insérer des races d'animals (5/6)
+- insérer des animaux (une dizaine) en le reliant à un propriétaire et une race au hasard
+- insérer des couleurs et les relier au animaux. ()chaque animal doit avoir au moin deux couleurs.
