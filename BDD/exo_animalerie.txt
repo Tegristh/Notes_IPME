@@ -1,0 +1,35 @@
+#### sur la base de l'animalerie, faire les SELECT suivant : ####
+- chaque SELECT sera à faire avec une jointure
+
+## Exercice 1 ##
+Séléctionner le nom et l'age de chaque animal et le nom de sa race
+
+## Exercice 2 ##
+Séléctionner le nom de chaque animal ainsi que le nom, prenom, date de naissance, email de son propriétaire
+
+## Exercice 3 ##
+Afficher le nom de tout les animaux dont la couleur est "bleu"
+
+## Exercice 4 ##
+Afficher le nom de tout les propriétaires 
+qui ont au moin un animal dont la race est "chien"
+
+## Exercice 5 ##
+Afficher le nom de tout les propriétaires 
+qui au moin un animal de couleur "bleu"
+
+## Exercice 6 ##
+Séléctionner le nom et prénom de chaque 
+propriétaire et afficher son nombre d'animal (GROUP BY et COUNT)
+
+## Exercice 7 ##
+Séléctionner le nom et prénom de chaque 
+propriétaire et afficher le nom de 
+chaque animal qu'il possède (GROUP BY et CONCAT)
+
+## Exercice 8 ##
+Séléctionner le nom et la race de chaque 
+animal ainsi que le nom et prenom de son propriétaire
+
+## Exercice 9 ##
+Demander les exos suivants au formateur !
