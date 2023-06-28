@@ -1,0 +1,47 @@
+1/ Ajouter un nouveau compte avec ces informations :
+⦁	Name : « Apexeurfoudu63 »
+⦁	Email : « asmenforce@hotmail.fr »
+⦁	Nickname : « Apexeurfoudu63 »
+
+2/ Ajouter à la librairie de ce joueur (par un SELECT, quand c’est nécessaire)
+⦁	Game_id : l’id du « Games » dont le « name » vaut « Apex la Légende »
+⦁	Account_id : l’id de l’ « Account » dont le name vaut Apexeurfoudu63 
+⦁	Installed : 1
+⦁	Game_time : 4242
+⦁	Last_used : Le 18 Février à 23h42
+
+3/ Faire une requête permettant d'afficher tout le contenu de la librarie d'un compte, les données seront affichées sous cette forme : 
+- "Joueur" récupéré depuis account.nickname
+- "Jeu" récupéré depuis game.name
+- "Installé O/N" récupéré depuis librarie.installed
+(Bonus pour les plus tenaces : remplacer les 1 par OUI et les 0 par NON)
+- "Temps passé" récupéré depuis librarie.game_time en hh:mm:ss 
+(PS : utilisez la fonction : SEC_TO_TIME pour cela)
+- "Dernière utilisation" : récupéré depuis librarie.last_used
+
+4/ Afficher les jeux (table : games) avec leur différents genres respectifs, cependant je veux une ligne par jeux et les différents genres en une seule colonne, que vous renommerez "Genre(s)".
+(PS : utiliser GROUP_CONCAT pour l'affichage en une seule colonne)
+
+5/ En reprenant la requête de la question 4, afficher le jeu le plus cher
+
+6/ En reprenant la requête de la question 4, afficher uniquement les jeux ayant au moins le style FPS
+
+7/ Affichez le temps de jeu total par nom de compte
+
+8/ Reprendre la question 3, et n'afficher cette fois que les jeux installés
+
+9/ Afficher la valeur (somme du prix des jeux) de la bibliothèque (librarie) d'un compte (account)
+
+11/ Afficher par jeux, le nombre de fois où il a été acheté
+
+12/ Afficher par jeux, son revenu total à son éditeur
+
+13/ Afficher par genre, son nombre de fois où il a été vendu
+
+14/ Afficher le top 3 des jeux les plus vendu
+
+15/ Afficher le top 3 des jeux les plus joués
+
+16/ Afficher les différents jeux par année, sous une même colonne
+
+17/ Le jeu le plus ancien
