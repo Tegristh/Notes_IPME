@@ -159,6 +159,7 @@ COUNT(librarie.game_id) AS `EXEMPLAIRES VENDUS`
 from librarie
 LEFT JOIN games ON game_id = games.id
 GROUP BY games.name
+ORDER BY COUNT(librarie.game_id) DESC
 LIMIT 3;
 
 # 15
