@@ -1,0 +1,38 @@
+/* selecteur {
+    propriete: valeur;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    color:white;
+    background-color: #333;
+}
+
+p {
+    color: #2a8649;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color:orange
+}
+
+button {
+    border-radius: 5px 15px;
+    padding: 10px;
+    border-width:0;
+    background-color: #2a8649;
+    color: orange;
+    font-size: large;
+}
+
+div {
+    margin: 1rem;
+    border:3px solid orange;
+    border-radius: 1rem;
+    padding: 1rem;
+}

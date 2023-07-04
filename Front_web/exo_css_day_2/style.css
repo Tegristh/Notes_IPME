@@ -1,0 +1,116 @@
+body {
+    background-color: #333;
+    color: white;
+    margin:0;
+}
+
+header {
+    position: relative;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.hero{
+    height:50vh;
+    width:100%;
+    object-fit:fill;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    font-weight: 900;
+
+    margin-left: 15vw;
+    top: 20vh;
+    width:80vw
+}
+
+nav {
+    padding-left: 4rem;
+    margin:5vw
+}
+
+main {
+    width:80vw;
+    margin: auto
+}
+
+.align-right {
+    text-align: right;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    background-color: #0d6e66;
+    padding-left: 0.5rem;
+}
+
+a {
+    color:#0d6e66;
+    text-decoration: none;
+}
+
+figcaption {
+    text-align: center;
+}
+
+button {
+    background-color: #0d6e66;
+    color: white;
+    border:0px;
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+}
+
+.vert {
+    color:#0d6e66;
+}
+
+span {
+    color: white;
+    font-style: italic;
+}
+
+table {
+    margin: auto;
+    
+}
+
+th {
+    padding: 1rem;
+    background-color: #0d6e66;
+    border-width: 0px 1px 1px 0px;
+    border-color: white;
+    border-style: solid;
+}
+
+td {
+    padding: 1rem;
+    border-width: 0px 1px 1px 0px;
+    border-color: white;
+    border-style: solid;
+
+}
+
+hr {
+    margin-bottom: opx;
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid white;
+    width: 100vw;
+    background-color: #444;
+    padding-left: 100px;
+    padding-top: 100px;
+    height: 10vh;
+}
+

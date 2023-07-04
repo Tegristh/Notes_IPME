@@ -205,7 +205,7 @@ BEGIN
         ()
     ) THEN
     SIGNAL SQLSTATE '45000'
-    SET MESSAGE_TEXT = "unable to delete user 😡 " 
+    SET MESSAGE_TEXT = "unable to delete user 😡 "
 
 END //
 DELIMITER;
