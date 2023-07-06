@@ -1,0 +1,189 @@
+/***********************************/
+/*Dans le code HTML, ajoutez des balises avec les classes e1, e2, e3 etc... ("e" pour "exercice")
+Faites en sorte de placer votre élément "e" dans la case "t" ("target" ou "cible") correspondante.
+
+Exemple: votre "e1" doit se placer dans la case "t1"
+
+*/
+/* Votre Code */
+.e1 {
+    position:fixed;
+    top:0;
+  }
+  
+  .e2 {
+    position: absolute;
+    top:-2rem;
+    left:20%;
+    right:20%;
+  }
+  
+  .e3 {
+    position: fixed;
+    bottom:0;
+    right:1rem;
+  }
+  
+  .e4 {
+    position: sticky;
+    top:0;
+    
+    
+    
+  }
+  
+  .e5 {
+    position:absolute;
+    bottom:0;
+    left:0;
+  }
+  
+  .e6 {
+    position: relative;
+    left:1.5rem;
+  }
+  
+  .e7 {
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    
+  }
+  
+  /* Fin de votre code */
+  /***********************************/
+  
+  :root {
+    font-family: system-ui, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    color-scheme: dark;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header,
+  article,
+  section,
+  aside,
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  header {
+    background-color: red;
+  }
+  
+  section {
+    background-color: blueviolet;
+  }
+  
+  article {
+    background-color: green;
+  }
+  
+  footer {
+    background-color: orangered;
+  }
+  
+  .rel {
+    position: relative;
+  }
+  
+  [class^="e"],
+  [class^="t"] {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 1rem;
+    z-index: 2;
+  }
+  
+  [class^="t"] {
+    border: 0.25rem dotted white;
+  }
+  
+  [class^="e"] {
+    opacity: 0.8;
+    background-color: cornflowerblue;
+  }
+  
+  .e1,
+  .t1 {
+    width: 100%;
+  }
+  
+  .e3,
+  .t3 {
+    width: 200px;
+  }
+  
+  .e4,
+  .t4,
+  .e6,
+  .t6 {
+    width: 300px;
+  }
+  
+  .e5,
+  .t5 {
+    width: 30%;
+  }
+  
+  /* SPOILER WARNING !!!*/
+  
+  /* Solution */
+  .t1 {
+    position: fixed;
+    top: 0;
+  }
+  
+  .t2 {
+    position: absolute;
+    top: -2rem;
+    left: 20%;
+    right: 20%;
+  }
+  
+  .t3 {
+    position: fixed;
+    bottom: 0;
+    right: 1rem;
+  }
+  
+  .t4 {
+    position: sticky;
+    top: 0;
+  }
+  
+  .t5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .t6 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  
+  .t7 {
+    position: absolute;
+    inset: 0 0 0 auto;
+  }
+  
