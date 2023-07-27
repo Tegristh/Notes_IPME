@@ -1,0 +1,51 @@
+form{
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 1.75rem;
+}
+
+
+#ex2result{
+    border:1px solid black;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    align-items:center;
+}
+
+.screen{
+    background-color: cornflowerblue;
+    color:white;
+    min-width:150px;
+    display: flex;
+    justify-content: end;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.sc2 {
+    background-color: darkcyan;
+}
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    min-width: 25px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    color:white;
+    background-color: cornflowerblue;
+}

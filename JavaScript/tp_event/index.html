@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta lastName="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tp_event</title>
+</head>
+<body>
+    <h1>TP Evenements</h1>
+    <h2>Exercice 1</h2>
+    <div class="container click-me">Cliquez moi!</div>
+    <hr>
+    <h2>Exercice 2</h2>
+    <input type="text" id="ex2">
+    <input type="submit" id="reset" value="Reset">
+    <input type="submit" id="backspace" value="Backspace">
+    <div id="ex2result"> </div>
+
+    <h2>Exercice 3</h2>
+        <div id="compteur">0</div>
+        <button class="btn" id="plus"> +1 </button>
+        <button class="btn" id="moins"> -1 </button>
+    <hr>
+    <h2>Exercice 4</h2>
+        <div class="container">
+        <div >Calculette</div>
+        <div class="row">
+            <label for="resultat">Résultat : </label>
+            <div class="screen" id="resultat">0</div></div>
+        <div class="row">
+            <label for="pending">pending : </label>
+            <div class="screen sc2" id="pending">0</div>
+        </div>
+        <div class="">
+            <div class="row num">
+                <div class="key" id="btn7" data-type="number" data-value="7">7</div>
+                <div class="key" id="btn8" data-type="number" data-value="8">8</div>
+                <div class="key" id="btn9" data-type="number" data-value="9">9</div>
+                <div class="key" id="div" data-type="operation" data-value="divide">/</div>
+            </div>
+            <div class="row num">
+                <div class="key" id="btn4" data-type="number" data-value="4">4</div>
+                <div class="key" id="btn5" data-type="number" data-value="5">5</div>
+                <div class="key" id="btn6" data-type="number" data-value="6">6</div>
+                <div class="key" id="mul" data-type="operation" data-value="multiply">*</div>
+            </div>
+            <div class="row num">
+                <div class="key" id="btn1" data-type="number" data-value="1">1</div>
+                <div class="key" id="btn2" data-type="number" data-value="2">2</div>
+                <div class="key" id="btn3" data-type="number" data-value="3">3</div>
+                <div class="key" id="sub" data-type="operation" data-value="substract">-</div>
+            </div>
+            <div class="row num">
+                <div class="key" id="0" data-type="number" data-value="0">0</div>
+                <div class="key" id="com"  data-type="operation" data-value="add">,</div>
+                <div class="key" id="enter" data-type="operation" data-value="calc">enter</div>
+                <div class="key" id="add" data-type="operation" data-value="substract">+</div>
+            </div>
+        </div>
+        
+</div>
+    <hr>
+    <h2>Exercice 5</h2>
+    <form action="">
+        <fieldset>
+            <legend>Formulaire</legend>
+            <label for="lastName">nom : </label>
+            <input type="text" name="lastName" id="lastName">
+            <br>
+            <label for="firstName">prenom: </label>
+            <input type="text" name="firstName" id="firstName">
+            <br>
+            <label for="email">email : </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="age">age : </label>
+            <input type="number" name="age" id="age">
+            <br>
+            <input type="submit" value="Validate" class="hidden">
+
+        </fieldset>
+    </form>
+<script src="./index.js"></script>
+</body>
+</html>
