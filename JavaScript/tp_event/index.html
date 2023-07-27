@@ -26,8 +26,13 @@
         <div class="container">
         <div >Calculette</div>
         <div class="row">
-            <label for="resultat">Résultat : </label>
-            <div class="screen" id="resultat">0</div></div>
+            <label for="resultat">Mémoire : </label>
+            <div class="screen" id="resultat">0</div>
+        </div>
+        <div class="row">
+            <label for="operation">next : </label>
+            <div class="screen" id="operation">""</div>
+        </div>
         <div class="row">
             <label for="pending">pending : </label>
             <div class="screen sc2" id="pending">0</div>
@@ -62,7 +67,7 @@
 </div>
     <hr>
     <h2>Exercice 5</h2>
-    <form action="">
+    <form  id="dyn-form" action="">
         <fieldset>
             <legend>Formulaire</legend>
             <label for="lastName">nom : </label>
@@ -77,7 +82,7 @@
             <label for="age">age : </label>
             <input type="number" name="age" id="age">
             <br>
-            <input type="submit" value="Validate" class="hidden">
+            <input type="submit" value="Validate"  id="dyn-button" >
 
         </fieldset>
     </form>

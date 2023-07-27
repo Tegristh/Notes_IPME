@@ -26,8 +26,10 @@ form{
 
 .screen{
     background-color: cornflowerblue;
+    padding: 1rem;
     color:white;
-    min-width:150px;
+    min-width:300px;
+    margin-left:2rem;
     display: flex;
     justify-content: end;
     font-size: 2rem;
@@ -38,6 +40,8 @@ form{
     background-color: darkcyan;
 }
 .key {
+    font-size: 1.5rem;
+    font-weight: 900;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,5 +51,9 @@ form{
     border-radius: 1rem;
     margin: 0.5rem;
     color:white;
-    background-color: cornflowerblue;
+    background-color: teal;
+}
+
+.hidden {
+    display: none;
 }
