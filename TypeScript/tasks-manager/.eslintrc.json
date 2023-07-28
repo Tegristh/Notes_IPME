@@ -1,0 +1,31 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "standard-with-typescript",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": [
+        "./tsconfig.json"
+        ]
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-process-env": "error",
+        "no-unused-vars": "off",
+        "no-unused-expression": "off",
+        "no-inner-declarations": "off",
+        "no-useless-constructor": "off",
+        "import/export": "off",
+        "no-redeclare": "off",
+        "no-use-before-define": "off",
+        "no-undef": "off",
+        "indent": "off",
+        "@typescript-eslint/indent": "off",
+        "no-multiple-empty-lines": "off"
+    }
+}

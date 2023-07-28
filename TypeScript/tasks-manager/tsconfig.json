@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "AMD",
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ],
+    "rootDir": ".",
+    "outDir": "./dist",
+    "outFile": "./dist/index.js"
+  }
+}
