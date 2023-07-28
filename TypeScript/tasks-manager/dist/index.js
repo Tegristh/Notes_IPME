@@ -53,4 +53,10 @@ tasks.forEach(function (t) {
     divContainer.append(title, subTitle);
     document.body.appendChild(divContainer);
 });
+var newTaskForm = document.querySelector('#newTask');
+newTaskForm === null || newTaskForm === void 0 ? void 0 : newTaskForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var data = new FormData(e.target);
+    console.log(data);
+});
 //# sourceMappingURL=index.js.map

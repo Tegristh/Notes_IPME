@@ -56,3 +56,11 @@ tasks.forEach(t => {
     divContainer.append(title, subTitle)
     document.body.appendChild(divContainer)
 })
+
+const newTaskForm = document.querySelector('#newTask')
+
+newTaskForm?.addEventListener('submit', (e: any) => {
+    e.preventDefault()
+    const data = new FormData(e.target)
+    console.log(data)
+})
