@@ -1,11 +1,11 @@
-const tbody = document.querySelector('tbody')
-const previousPageBtn = document.querySelector("#previousPage")
-const currentPageSpan = document.querySelector("#currentPage")
-const nextPageBtn = document.querySelector("#nextPage")
+const tbody = document.querySelector("tbody");
+const previousPageBtn = document.querySelector("#previousPage");
+const currentPageSpan = document.querySelector("#currentPage");
+const nextPageBtn = document.querySelector("#nextPage");
 
-let page = 1
-let pageSize = 20
-let maxPage
+let page = 1;
+let pageSize = 20;
+let maxPage;
 
 // previousPageBtn.addEventListener("click", (e) =>{
 //     e.preventDefault()
@@ -20,7 +20,6 @@ let maxPage
 //             previousPageBtn.classList.add('disabled')
 //     }
 
-    
 // })
 
 // nextPageBtn.addEventListener("click", (e) =>{
@@ -39,38 +38,44 @@ let maxPage
 
 function getData() {
     fetch(`https://api.coingecko.com/api/v3/coins/list`)
-	.then(res => res.json())
-	.then(res => {
-        
-        if (maxPage !== Math.ceil(res.length/pageSize)) {
-            maxPage = Math.ceil(res.length /pageSize)
+        .then((res) => {
+            console.log(res.status)      
+            return res.json()
+        })
+    .then((res) => {
+        if (maxPage !== Math.ceil(res.length / pageSize)) {
+            maxPage = Math.ceil(res.length / pageSize);
         }
-        // clearTBody()
-        // currentPageSpan.innerText = page
-        console.log(maxPage, res)
-        res.forEach(generateRow)
+        clearTBody();
+        currentPageSpan.innerText = page;
+        console.log(maxPage, res);
+        res.forEach(generateRow);
     })
-	.catch(e => console.log(e));
+    .catch((e) => {
+        console.log(e)
+        fetch("./data.json")
+        .then(res => res.json())
+        .then(res => console.log(res))
+    })
 }
 
 function clearTBody() {
-    while (tbody.firstChild){
-        tbody.removeChild(tbody.lastChild)
+    while (tbody.firstChild) {
+        tbody.removeChild(tbody.lastChild);
     }
 }
 
 function generateRow(coin) {
-    const newRow = document.createElement("tr")
-    const newId = document.createElement("td")
-        newId.innerText = coin._id
-    const newName = document.createElement("td")
-        newName.innerText = coin.name
-    const newSymbol = document.createElement("td")
-        newSymbol.innerText = coin.symbol
+    const newRow = document.createElement("tr");
+    const newId = document.createElement("td");
+    newId.innerText = coin._id;
+    const newName = document.createElement("td");
+    newName.innerText = coin.name;
+    const newSymbol = document.createElement("td");
+    newSymbol.innerText = coin.symbol;
 
-    
-    newRow.append(newId, newName, newSymbol)
-    tbody.appendChild(newRow)
+    newRow.append(newId, newName, newSymbol);
+    tbody.appendChild(newRow);
 }
 
-getData()
+getData();
