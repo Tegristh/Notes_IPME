@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eval JS</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+  <link rel="stylesheet" href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="super_container">
+    
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-light">
+
+  <a class="navbar-brand" href="#!">
+    EVAL JS
+  </a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav11"
+    aria-controls="basicExampleNav11" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="basicExampleNav11">
+
+    <!-- Right -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <div id="cart" class="nav-link navbar-link-2 waves-effect" data-toggle="modal" data-target="#cart_modal">
+          <i class="fas fa-shopping-cart pl-0"></i>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#!" class="nav-link waves-effect">
+          Accueil
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#!" class="nav-link waves-effect">
+          Contact
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#!" class="nav-link waves-effect">
+          Se connecter
+        </a>
+      </li>
+      <li class="nav-item pl-2 mb-2 mb-md-0">
+        <a href="#!" type="button"
+        class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">S'inscrire</a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- Links -->
+
+</nav>
+<!-- Navbar -->
+
+    <div class="single_product">
+        <div class="container-fluid" style=" background-color: #fff; padding: 11px;">
+            <div class="row">
+                <div class="col-lg-2 order-lg-1 order-2">
+                    <ul class="image_list">
+                        <li data-image="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg" alt=""></li>
+                        <li data-image="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713228/single_2.jpg"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713228/single_2.jpg" alt=""></li>
+                        <li data-image="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713228/single_3.jpg"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713228/single_3.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 order-lg-2 order-1">
+                    <div class="image_selected"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565713229/single_4.jpg" alt=""></div>
+                </div>
+                <div class="col-lg-6 order-3">
+                    <div class="product_description">
+                        <nav>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                                <li class="breadcrumb-item"><a href="#">Produits</a></li>
+                                <li class="breadcrumb-item active">Apple</li>
+                            </ol>
+                        </nav>
+                        <div class="product_name">APPLE APPLE MACBOOK AIR 13.3" LED 256 GO SSD 8 GO RAM INTEL CORE I3 BICŒUR À 1.1 GHZ GRIS SIDÉRAL NOUVEAU</div>
+                        <div class="product-rating"><span class="badge badge-success"><i class="fa fa-star"></i> 4.5 Étoiles</span> <span class="rating-review">35 Notes & 45 Commentaires</span></div>
+                        <div> <span class="product_price">1199,99€</span>
+                        <hr class="singleline">
+                        <div class="order_info d-flex flex-row">
+                            <form action="#">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6" style="margin-left: 13px;">
+                                <div class="product_quantity"> <span>QTY: </span> <input id="quantity_input" type="text" pattern="[0-9]*" value="0">
+                                    <div class="quantity_buttons">
+                                        <div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fas fa-chevron-up"></i></div>
+                                        <div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fas fa-chevron-down"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6"> 
+                              <button type="button" id="add_to_card" class="btn btn-primary shop-button">AJOUTER AU PANIER</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- CART MODAL -->
+<div class="modal fade" id="cart_modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MON PANIER</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          <thead>
+            <td>Quantité</td>
+            <td>Nom</td>
+            <td>Prix</td>
+            <td>Total</td>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+        <div>Montant du panier: <span class="total-cart">test</span>€</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Commander</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+  <script src='main.js'></script>
+
+</body>
